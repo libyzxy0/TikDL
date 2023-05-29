@@ -1,3 +1,6 @@
+<!--
+  © 2023 libyzxy0
+ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,22 +12,42 @@
 </head>
 <body>
     <nav>
-        <h1>Tiktok <b>DL</b></h1>
+        <h1>Tik <b>DL</b></h1>
     </nav>
     <section class="hero" id="hero">
         <div class="container">
             <div class="input-box">
                 <form id="formUrl">
                     <div class="input-container">
-                        <input type="url" name="url" id="url" placeholder="Enter Tiktok Url">
-                        <button id="paste-url" type="button">Paste</button>
+                        <input type="url" name="url" id="url" placeholder="Paste tiktok url here!">
+                        <button id="paste-url" type="button"><ion-icon name="clipboard-outline"></ion-icon></button>
                     </div>
-                    <button id="download" type="submit" class="download">Download</button>
+                    <button type="submit" class="download">Download <ion-icon name="download-outline"></ion-icon></button>
                 </form>
             </div>
+            <div class="cards">
+                <div class="card">
+                    <h1>How to download?</h1>
+                    <p>Just simply put your tiktok url in the input box and clixk download button.</p>
+                </div>
+                <div class="card">
+                    <h1>Api that we use?</h1>
+                    <p>The api that we use is <a href="https://tiktok-dl-api.libyzxy0.repl.co?url=">Tiktok DL API</a> by <a href="https://github.com/libyzxy0">libyzxy0</a> it is free, you can use it too.</p>
+                </div>
+                <div class="card">
+                    <h1>Our mission</h1>
+                    <p>Our mission is to make user easy to download tiktok video.</p>
+                </div>
+                <div class="card">
+                    <h1>Developer Contact</h1>
+                    <p>Contact Jan Liby Dela Costa (<a href="https://www.facebook.com/libyzxy0">libyzxy0</a>) on facebook.</p>
+                </div>
+            </div>
+            <div class="copyright"><p>© Copyright 2023 TikDL | libyzxy0 Allrights Reserve.</p></div>
         </div>
     </section>
-    
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

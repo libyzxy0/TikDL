@@ -138,6 +138,7 @@ nav h1 b {
 }
 .copyright p {
     color: var(--text-white);
+    font-size: 14px;
 }
 .cards {
     margin-top: 3rem;

@@ -1,3 +1,6 @@
+/*
+© 2023 libyzxy0
+*/
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:wght@300&display=swap');
 /*
 font-family: 'Bebas Neue', sans-serif;
@@ -27,7 +30,7 @@ nav {
     align-items: center;    
     top: 0;
     background-color: var(--background-secondary);
-    height: 3rem;
+    height: 3.3rem;
     width: 100%;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
@@ -35,6 +38,7 @@ nav h1 {
     color: var(--color-primary);
     margin-left: 1rem;
     font-family: 'Bebas Neue', sans-serif;
+    margin-top: 0.1rem;
 }
 nav h1 b {
     color: var(--color-secondary);
@@ -75,10 +79,10 @@ nav h1 b {
     border-color: #0d6efd;
     display: inline-block;
     font-weight: 400;
-    line-height: 1.1;
+    line-height: 1;
     text-align: center;
     border: 1px solid transparent;
-    padding: 6px 9px;
+    padding: 5px 7px;
     font-size: 16px;
     border-radius: .25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;             
@@ -100,7 +104,7 @@ nav h1 b {
     height: 2.6rem;
     width: 18rem;
     padding: 0 0.6rem;
-    padding-right: 4.7rem;
+    padding-right: 3rem;
     color: var(--text-white);
     font-size: 16px;
     border-radius: 7px;
@@ -109,13 +113,14 @@ nav h1 b {
     margin-bottom: 1rem;
 }
 .input-box form .download {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     outline: 0;
     cursor: pointer;
     border: none;
     width: 17.6rem;
     height: 2.4rem;
-    line-height: 45px;
     border-radius: 7px;
     background-color: #0070f3;
     color: white;
@@ -127,4 +132,42 @@ nav h1 b {
 .input-box form .download:hover {
     background: rgba(0,118,255,0.9);
     box-shadow: 0 6px 20px rgb(0 118 255 / 23%);
+}
+.copyright {
+    margin-bottom: 2rem;
+}
+.copyright p {
+    color: var(--text-white);
+}
+.cards {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cards .card {
+    margin-bottom: 1.5rem;
+    width: 18rem;
+    border-radius: 7px;
+    background-color: var(--background-secondary);
+    box-shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 13%), 0 0.3px 0.9px 0 rgb(0 0 0 / 11%);
+}
+.cards .card h1 {
+    color: var(--color-primary);
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+.cards .card p {
+    color: var(--text-white);
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0.5rem 1rem;
+    padding-bottom: 0.8rem;
+}
+.cards .card a {
+    color: var(--color-secondary);
+    text-decoration: none;
 }

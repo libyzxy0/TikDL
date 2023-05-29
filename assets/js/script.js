@@ -1,3 +1,7 @@
+
+/*
+© 2023 libyzxy0
+*/
 const form = document.getElementById('formUrl');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -15,4 +19,20 @@ form.addEventListener('submit', (e) => {
     console.error('Error:', error);
   });
 
+})
+
+
+document.getElementById('paste-url').addEventListener('click', () => {
+    // Check if the browser supports the Clipboard API
+if (navigator.clipboard && navigator.clipboard.readText) {
+  navigator.clipboard.readText()
+    .then(text => {
+      document.getElementById('url').value = text;
+    })
+    .catch(err => {
+      console.error("Failed to read clipboard contents:", err);
+    });
+} else {
+  console.error("Clipboard API not supported");
+}
 })
